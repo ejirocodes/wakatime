@@ -10,6 +10,11 @@ let getLeaderBoard = async () => {
     let leaders = await axios.get('https://wakatime.com/api/v1/leaders');
     return leaders
 }
+app.get('/', (req, res) => {
+    res.send('Hello there')
+    }
+
+})
 
 app.get('/leaders', async (req, res) => {
     try {
