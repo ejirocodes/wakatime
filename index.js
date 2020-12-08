@@ -25,4 +25,4 @@ app.get('/leaders', async (req, res) => {
 })
 
 
-app.listen(5001, () => console.log('ok, running'))
+app.listen(process.env.PORT || 5000() => console.log('ok, running'))
