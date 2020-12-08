@@ -12,9 +12,7 @@ let getLeaderBoard = async () => {
 }
 app.get('/', (req, res) => {
     res.send('Hello there')
-    }
-
-})
+    })
 
 app.get('/leaders', async (req, res) => {
     try {
